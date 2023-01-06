@@ -1,0 +1,77 @@
+.about_product {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 38px;
+  }
+
+  &-element {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-info {
+    @media screen and (min-width: 1200px) {
+      order: 2;
+    }
+  }
+
+  &-titel {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    color: #1f2343;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 16px;
+
+      font-size: 34px;
+      line-height: 46px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+
+      font-size: 46px;
+      line-height: 63px;
+    }
+  }
+
+  &-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+
+    color: #585b71;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 22px;
+
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 371px;
+
+      font-size: 13px;
+    }
+  }
+
+  &-photo {
+    max-width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      order: 1;
+
+      margin-right: 110px;
+    }
+  }
+}

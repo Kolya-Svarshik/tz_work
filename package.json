@@ -1,0 +1,40 @@
+{
+  "name": "preland",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.25%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".parcel-cache"
+  ],
+  "parcel-namer-custom": {
+    ".scss$": "lands_files/css/[name].[hash].[type]",
+    ".jsx?$": "lands_files/scripts/[name].[hash].[type]",
+    ".jpg$|.png$|.jpeg$|.svg$|.webp$|.ico": "lands_files/img/[name].[hash].[type]",
+    ".svg$": "lands_files/[folder][name].[hash].[type]"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-jsonld": "^2.8.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "buffer": "^6.0.3",
+    "cssnano": "^4.1.11",
+    "parcel": "^2.7.0",
+    "parcel-namer-custom": "^0.2.0",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "postcss": "^8.4.16",
+    "process": "^0.11.10",
+    "sass": "^1.54.8",
+    "sharp": "^0.31.1"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "parcel-namer-rewrite": "^2.0.0-rc.2"
+  }
+}

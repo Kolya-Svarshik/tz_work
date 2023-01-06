@@ -1,0 +1,142 @@
+.footer {
+  position: relative;
+
+  &_navigation {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 15.86px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+
+      margin-bottom: 128px;
+    }
+  }
+
+  &_nav {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 23px;
+    }
+  }
+
+  .logo-footer {
+    @media screen and (max-width: 1199px) {
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 320px;
+    }
+  }
+
+  &_nav-list {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 15.86px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &_nav-elem {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &_nav-item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #eff9ff;
+
+    // @media screen and (min-width: 1200px) {
+    // display: flex;
+    // }
+  }
+
+  &_link {
+    display: flex;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 9.36px;
+      }
+    }
+  }
+
+  &_copy {
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 58px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-bottom: 62px;
+    }
+
+    &-text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+
+      color: #ffffff;
+
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 17px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: auto;
+      }
+    }
+
+    &-list {
+      display: flex;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    &-link {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+
+      color: #ffffff;
+
+      @media screen and (max-width: 1199px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+}

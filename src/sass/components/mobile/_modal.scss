@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $color-bg-modal;
+
+  opacity: 1;
+
+  overflow-y: scroll;
+
+  transition: opacity 250ms $timing-function;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-hidden .form-footer {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.modal {
+  display: block;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 40px;
+  border-radius: 4px;
+
+  background-color: $color-primary-white;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  z-index: 10;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms $timing-function;
+
+  &-btn {
+    padding: 12px 16px;
+
+    border: 1px solid #eaeaea;
+    border-radius: 99.5px;
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+}
